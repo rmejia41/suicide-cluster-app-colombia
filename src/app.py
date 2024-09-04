@@ -11,7 +11,7 @@ import io
 import folium
 from folium.plugins import MarkerCluster
 from dotenv import load_dotenv
-import os
+
 
 # Set Matplotlib backend to 'Agg' to avoid GUI-related issues
 plt.switch_backend('Agg')
