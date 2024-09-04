@@ -233,6 +233,5 @@ def update_map(selected_year, selected_department,selected_municipality):
     return generate_map(data, initial=True)
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8050))
-    app.run_server(debug=False, port=port)
+    app.run_server(debug=False)
 
