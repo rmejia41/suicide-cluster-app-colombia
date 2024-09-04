@@ -11,16 +11,11 @@ import io
 import folium
 from folium.plugins import MarkerCluster
 
-
-
 # Set Matplotlib backend to 'Agg' to avoid GUI-related issues
 plt.switch_backend('Agg')
 
-# Load environment variables from .env file
-load_dotenv()
-
 # Load data
-file_path = 'C:/Users/Biu9/OneDrive - CDC/Python files/Colombia/Data/Suicidios_Colombia_2016_2019_merged.xlsx'
+file_path = 'https://github.com/rmejia41/open_datasets/raw/main/Suicidios_Colombia_2016_2019_merged.xlsx'
 data = pd.read_excel(file_path)
 
 # Correct mismatched data based on DEPARTAMENTO and MUNICIPIO
