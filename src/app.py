@@ -98,7 +98,7 @@ def generate_map(filtered_data, initial=False):
     return folium_map._repr_html_()
 
 # Initialize the Dash app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SANDSTONE], suppress_callback_exceptions=False)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SANDSTONE], suppress_callback_exceptions=True)
 server = app.server
 
 # Layout
